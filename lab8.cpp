@@ -151,7 +151,11 @@ int main(int argc, char *argv[])
         sbsi.wc = atof(argv[2]); 
         sbsi.bsa = atof(argv[3]);
         sbsi.vtc = atof(argv[4]);
+        printf("H, WC, BSA, and VTC\n");
         printf("%.2f %.2f %.2f %.2f\n", sbsi.h, sbsi.wc, sbsi.bsa, sbsi.vtc);
+        Flt val = bodyShapeIndex(&sbsi);
+		cout << "Thanks.\n";
+		cout << "Your SBSI index is: " << val << endl;
     //Unit Test
     } else if (argc >= 2 && argc < 4) {
     	printf("Unit Test for SBSI Function\n");
